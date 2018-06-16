@@ -1,6 +1,6 @@
 # Docker Angular test suite
 
-Docker image to test (unit and e2e) angular appliaction
+Docker image to test (unit and e2e) angular appliaction with Chrome and Firefox
 
 ## Download Foirefox
 https://download.mozilla.org/?product=firefox-latest-ssl&os=linux64&lang=fr
