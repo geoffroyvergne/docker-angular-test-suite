@@ -1,0 +1,14 @@
+https://download.mozilla.org/?product=firefox-latest-ssl&os=linux64&lang=fr
+
+
+docker build -t angular-test-suite .
+
+docker run --rm -it --entrypoint=bash angular-test-suite
+
+chromium --headless --disable-gpu --dump-dom --no-sandbox https://google.com/
+
+ng serve --host 0.0.0.0
+
+docker run --rm -it angular-test-suite protractor protractor.conf.js --baseUrl=http://192.168.1.21:4200/
+
+docker run --rm -it angular-test-suite karma start karma.conf.js
